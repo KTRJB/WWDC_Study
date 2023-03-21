@@ -15,7 +15,7 @@
 
 | 연도 | 카테고리 | 제목 | 난이도 | 체크 |
 | --- | --- | --- | --- |---|
-| 2015 | Swift | Protocol-Oriented Programming in Swift | 중 ||
+| 2015 | Swift | Protocol-Oriented Programming in Swift | 중 |😀|
 | 2016 | Swift | Protocol and Value Oriented Programming in UIKit Apps | 중 ||
 | 2016 | Debugging | Thread Sanitizer and Static Analysis | 중 ||
 | 2016 | Internationalization and Localization | Internationalization Best Practices | 하 ||
