@@ -72,4 +72,3 @@
 > 
 - 폴더구조: 공부하는 주제 `( ex. /Protocol-Oriented Programming in Swift )`
 - 파일명: 개요, 실습.md  `( ex. Concept.md, Practice.md(or 프로젝트) )`
-- Commit Title: 키워드 제목 `( ex. Protocol-Oriented Programming in Swift_Concept )`
