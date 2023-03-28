@@ -143,18 +143,18 @@ struct TopicRequest: UnsplashReuqest {
     
 }
 
-// 사용문
+// 실제 호출
 let request = TopicRequest()
-        request.execute { (result: Result<Data, Error>) in
-            switch result {
-            case .success(let data):
-                self.topics = try? JSONDecoder().decode([Topic].self, from: data)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
+request.execute { (result: Result<Data, Error>) in
+    switch result {
+    case .success(let data):
+        self.topics = try? JSONDecoder().decode([Topic].self, from: data)
+    case .failure(let error):
+        print(error.localizedDescription)
+    }
             
-            DispatchQueue.main.async {
-                self.navigationView.customTabBarView.configureMeunList(self.topics?.map { $0.title })
-            }
-        }
+    DispatchQueue.main.async {
+        self.navigationView.customTabBarView.configureMeunList(self.topics?.map { $0.title })
+    }
+}
 ```
