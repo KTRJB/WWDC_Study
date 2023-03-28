@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		456CA73C286FCC5C001EE565 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA73B286FCC5C001EE565 /* main.swift */; };
+		456CA744286FD017001EE565 /* Chargeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA743286FD017001EE565 /* Chargeable.swift */; };
+		456CA74A286FD91F001EE565 /* AppleWatchCharger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA749286FD91F001EE565 /* AppleWatchCharger.swift */; };
+		456CA74C286FDA02001EE565 /* IphoneCharger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA74B286FDA02001EE565 /* IphoneCharger.swift */; };
+		456CA74E286FDA27001EE565 /* IPadCharger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA74D286FDA27001EE565 /* IPadCharger.swift */; };
+		456CA750286FDA42001EE565 /* DefaultMacBookCharger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA74F286FDA42001EE565 /* DefaultMacBookCharger.swift */; };
+		456CA752286FDA6A001EE565 /* FastestMacBookCharger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA751286FDA6A001EE565 /* FastestMacBookCharger.swift */; };
+		456CA755286FDB1E001EE565 /* MacBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA754286FDB1E001EE565 /* MacBook.swift */; };
+		456CA758286FE521001EE565 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA757286FE521001EE565 /* Bag.swift */; };
+		456CA75A286FE52D001EE565 /* Portable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456CA759286FE52D001EE565 /* Portable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		456CA736286FCC5C001EE565 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		456CA738286FCC5C001EE565 /* POP_MacCharger */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = POP_MacCharger; sourceTree = BUILT_PRODUCTS_DIR; };
+		456CA73B286FCC5C001EE565 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		456CA743286FD017001EE565 /* Chargeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargeable.swift; sourceTree = "<group>"; };
+		456CA749286FD91F001EE565 /* AppleWatchCharger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchCharger.swift; sourceTree = "<group>"; };
+		456CA74B286FDA02001EE565 /* IphoneCharger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneCharger.swift; sourceTree = "<group>"; };
+		456CA74D286FDA27001EE565 /* IPadCharger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadCharger.swift; sourceTree = "<group>"; };
+		456CA74F286FDA42001EE565 /* DefaultMacBookCharger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMacBookCharger.swift; sourceTree = "<group>"; };
+		456CA751286FDA6A001EE565 /* FastestMacBookCharger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastestMacBookCharger.swift; sourceTree = "<group>"; };
+		456CA754286FDB1E001EE565 /* MacBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBook.swift; sourceTree = "<group>"; };
+		456CA757286FE521001EE565 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		456CA759286FE52D001EE565 /* Portable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		456CA735286FCC5C001EE565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		456CA72F286FCC5C001EE565 = {
+			isa = PBXGroup;
+			children = (
+				456CA73A286FCC5C001EE565 /* POP_MacCharger */,
+				456CA739286FCC5C001EE565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		456CA739286FCC5C001EE565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456CA738286FCC5C001EE565 /* POP_MacCharger */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456CA73A286FCC5C001EE565 /* POP_MacCharger */ = {
+			isa = PBXGroup;
+			children = (
+				456CA73B286FCC5C001EE565 /* main.swift */,
+				456CA756286FE517001EE565 /* Bag */,
+				456CA753286FDAED001EE565 /* MacBook */,
+				456CA748286FD8F1001EE565 /* Charger */,
+				456CA742286FCFE0001EE565 /* Protocol */,
+			);
+			path = POP_MacCharger;
+			sourceTree = "<group>";
+		};
+		456CA742286FCFE0001EE565 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				456CA743286FD017001EE565 /* Chargeable.swift */,
+				456CA759286FE52D001EE565 /* Portable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		456CA748286FD8F1001EE565 /* Charger */ = {
+			isa = PBXGroup;
+			children = (
+				456CA749286FD91F001EE565 /* AppleWatchCharger.swift */,
+				456CA74B286FDA02001EE565 /* IphoneCharger.swift */,
+				456CA74D286FDA27001EE565 /* IPadCharger.swift */,
+				456CA74F286FDA42001EE565 /* DefaultMacBookCharger.swift */,
+				456CA751286FDA6A001EE565 /* FastestMacBookCharger.swift */,
+			);
+			path = Charger;
+			sourceTree = "<group>";
+		};
+		456CA753286FDAED001EE565 /* MacBook */ = {
+			isa = PBXGroup;
+			children = (
+				456CA754286FDB1E001EE565 /* MacBook.swift */,
+			);
+			path = MacBook;
+			sourceTree = "<group>";
+		};
+		456CA756286FE517001EE565 /* Bag */ = {
+			isa = PBXGroup;
+			children = (
+				456CA757286FE521001EE565 /* Bag.swift */,
+			);
+			path = Bag;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		456CA737286FCC5C001EE565 /* POP_MacCharger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456CA73F286FCC5C001EE565 /* Build configuration list for PBXNativeTarget "POP_MacCharger" */;
+			buildPhases = (
+				456CA734286FCC5C001EE565 /* Sources */,
+				456CA735286FCC5C001EE565 /* Frameworks */,
+				456CA736286FCC5C001EE565 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = POP_MacCharger;
+			productName = POP_MacCharger;
+			productReference = 456CA738286FCC5C001EE565 /* POP_MacCharger */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456CA730286FCC5C001EE565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					456CA737286FCC5C001EE565 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 456CA733286FCC5C001EE565 /* Build configuration list for PBXProject "POP_MacCharger" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 456CA72F286FCC5C001EE565;
+			productRefGroup = 456CA739286FCC5C001EE565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456CA737286FCC5C001EE565 /* POP_MacCharger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		456CA734286FCC5C001EE565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456CA752286FDA6A001EE565 /* FastestMacBookCharger.swift in Sources */,
+				456CA73C286FCC5C001EE565 /* main.swift in Sources */,
+				456CA74C286FDA02001EE565 /* IphoneCharger.swift in Sources */,
+				456CA74A286FD91F001EE565 /* AppleWatchCharger.swift in Sources */,
+				456CA75A286FE52D001EE565 /* Portable.swift in Sources */,
+				456CA755286FDB1E001EE565 /* MacBook.swift in Sources */,
+				456CA750286FDA42001EE565 /* DefaultMacBookCharger.swift in Sources */,
+				456CA744286FD017001EE565 /* Chargeable.swift in Sources */,
+				456CA758286FE521001EE565 /* Bag.swift in Sources */,
+				456CA74E286FDA27001EE565 /* IPadCharger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		456CA73D286FCC5C001EE565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		456CA73E286FCC5C001EE565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		456CA740286FCC5C001EE565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R86M48N8C3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		456CA741286FCC5C001EE565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R86M48N8C3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		456CA733286FCC5C001EE565 /* Build configuration list for PBXProject "POP_MacCharger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456CA73D286FCC5C001EE565 /* Debug */,
+				456CA73E286FCC5C001EE565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456CA73F286FCC5C001EE565 /* Build configuration list for PBXNativeTarget "POP_MacCharger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456CA740286FCC5C001EE565 /* Debug */,
+				456CA741286FCC5C001EE565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456CA730286FCC5C001EE565 /* Project object */;
+}
