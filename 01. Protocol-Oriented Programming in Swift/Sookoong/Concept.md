@@ -3,8 +3,8 @@
 ## 💎 배경
 
 - **Class의 장점**
-    
-    ![스크린샷 2023-03-27 오후 4.37.56.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2ecdd1b1-a9dd-4d43-8df0-fc285ff641b5/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.37.56.png)
+
+    <img src = "https://user-images.githubusercontent.com/99063327/228453598-5720ff29-6a07-4d73-bd40-73f300a313fa.png" width="50%" height="50%">
     
     - 캡슐화
         - 상태와 행동 저장 및 은닉화 용이
@@ -35,7 +35,7 @@
 - **Class의 문제점**
     - **Implicit Sharing**
         
-        ![스크린샷 2023-03-27 오후 4.58.49.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a99bbd54-f650-4ee6-a726-47e56c5b6bae/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.58.49.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228454468-de21020b-1048-4e46-992f-7fe64ef5254f.png" width="50%" height="50%">
         
         - 다중 스레드 환경에서 사용할 때 잘못된 참조로 인해 원본 데이터 변경 위험
             - 자식 클래스가 부모 클래스에 대한 의존성을 가지는 경우, 부모 클래스의 변경이 자식 클래스에 영향을 미칠 수 있음
@@ -46,7 +46,7 @@
         - 반면, Value Type은 공유 X → 문제 미발생
     - **Inheritance All Up In Your Business**
         
-        ![스크린샷 2023-03-27 오후 5.03.07.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04cb2fc4-1c48-4dbd-948f-ba8f9724ac37/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.03.07.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228454774-78963900-9606-4f9b-93f8-5fea1f25ffb0.png" width="50%" height="50%">
         
         - Monolithic(단일체의, 한 덩어리로 뭉친) - 단일 상속의 한계
             - 오직 하나의 superclass밖에 가지지 못함
@@ -56,27 +56,27 @@
     - **Lost Type Relationships**
         - 예시
             
-            ![스크린샷 2023-03-27 오후 5.17.28.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/74e5ec4a-2773-444a-80f9-374d6325b536/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.17.28.png)
+            <img src = "https://user-images.githubusercontent.com/99063327/228454933-237b71b3-f5fe-4aae-b976-c09757ce943e.png" width="50%" height="50%">
             
             - precedes(other:) 메서드 내 Body 필요
             
-            ![스크린샷 2023-03-27 오후 5.18.38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3e192ad2-7d42-4201-92a3-8389e563025f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.18.38.png)
+            <img src = "https://user-images.githubusercontent.com/99063327/228455032-bfc957bd-3f08-40c8-b6b5-b1160f81165c.png" width="50%" height="50%">
             
             - 해당 방법으로 밖에 해결 불가 → 이미 문제가 있음을 의미
             
-            ![스크린샷 2023-03-27 오후 5.19.17.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1014823c-d34d-4a9f-966d-624b434fd6e7/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.19.17.png)
+            <img src = "https://user-images.githubusercontent.com/99063327/228455104-e5ea16bc-4c87-4704-bb72-c2260ee25060.png" width="50%" height="50%">
             
             - Ordered 클래스를 상속하는 Number 클래스 생성 및 구현
             
-            ![스크린샷 2023-03-27 오후 5.20.07.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b52d631-3dd4-4c11-be70-346df0d57674/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.20.07.png)
+            <img src = "https://user-images.githubusercontent.com/99063327/228455209-28160e53-1883-4184-b582-2065b4ea00c2.png" width="50%" height="50%">
             
             - 오버라이딩하는 메서드의 파라미터인 other은 값 프로퍼티를 갖는지 알 수 없음
             
-            ![스크린샷 2023-03-27 오후 5.22.04.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/34109690-f72f-4bd5-8ca1-0d668ebb526c/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.22.04.png)
+            <img src = "https://user-images.githubusercontent.com/99063327/228455409-6add2010-f13f-4b56-9121-3cc18dcab5cf.png" width="50%" height="50%">
             
             - 심지어 Double이 아닌 String 값을 가지는 객체일 가능성도 존재하여 위의 에러가 발생
             
-            ![스크린샷 2023-03-27 오후 5.22.29.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/074ac6ab-6265-4fa9-b79d-c79b1b2b42e4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.22.29.png)
+            <img src = "https://user-images.githubusercontent.com/99063327/228455547-fb94aee0-e555-4952-b1ab-a9e188db18c3.png" width="50%" height="50%">
             
             - 다운 캐스팅을 통해서야 실제 값 접근
             - 그러나, 다운 캐스트 구조(as! ASubclass)는 사실 타입들간 관계에서 유실 발생 의미
@@ -91,7 +91,7 @@
 
 - **A Better Abstraction Mechanism**
     
-    ![스크린샷 2023-03-27 오후 5.25.14.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c2a08b9-32b0-4a1b-99d5-56569efa39c4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.25.14.png)
+    <img src = "https://user-images.githubusercontent.com/99063327/228455665-f5cb605e-0c2a-4593-8fb1-479310964d17.png" width="50%" height="50%">
     
     - 클래스 뿐만이 아닌 값 타입 지원
     - 동적 디스패치뿐만이 아닌 정적 타입 관계 지원
@@ -110,48 +110,48 @@
     - Swift는 OOP에 적합하지만, for 루프 및 문자열 리터럴이 작동하는 방식에서 제네릭에 대한 표준 라이브러리의 강조점에 이르기까지 Swift는 POP
     - OOP → POP 변환 예시
         
-        ![스크린샷 2023-03-27 오후 6.08.38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1d3a1299-f3b6-4c15-af7f-fc4b6b9676fc/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.08.38.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228455759-856079f0-e7c1-4148-a6f5-5fa9c6630756.png" width="50%" height="50%">
         
         - 기존의 class로 구현된 Ordered를 protocol로 변경
         
-        ![스크린샷 2023-03-27 오후 6.09.07.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d3cb40a0-7550-414d-8aff-88eb9a01ccf5/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.09.07.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228455844-5f8af55e-f788-4c75-a525-1cadd2a132d6.png" width="50%" height="50%">
         
         - protocol은 구현부가 불필요하므로 삭제
         
-        ![스크린샷 2023-03-27 오후 6.10.02.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/11c1e327-9310-47b0-b34a-7b9c10001a3b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.10.02.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228455925-b9f27054-2200-452e-8142-a32471818d57.png" width="50%" height="50%">
         
         - 타입 변경으로 인하여 override 불필요하므로
         
-        ![스크린샷 2023-03-27 오후 6.10.53.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6f0f9737-6c02-44f2-9347-7e843148c520/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.10.53.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228456070-e4ed8c07-03d7-409c-ad91-1056bfc04c59.png" width="50%" height="50%">
         
         - Number가 숫자처럼 행동하길 원하기 때문에, 타입을 struct로 변경하고, override 제거
         - fatalError는 제거했으나 other은 임의의 Ordered로 여전히 강제 다운캐스트 필요
         
-        ![스크린샷 2023-03-27 오후 6.15.29.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82e1ba0a-1da0-4b2d-8bed-a1f1b4502d22/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.15.29.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228456223-450c5063-5ed6-48c3-bbf3-1b8f5d251fc1.png" width="50%" height="50%">
         
         - 이에 other 타입을 Number로 변경
         - 그러나, signature가 matching되지 않아 에러 발생
         
-        ![스크린샷 2023-03-27 오후 6.18.37.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef132304-d9c6-40e3-8694-8d152f774b8b/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.18.37.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228456403-fa577221-17dd-45ec-bd42-e3763d69917a.png" width="50%" height="50%">
         
         - 문제 해결을 위해 protocol signature에서 Ordered를 Self로 변경
         - 이를, Self-Requirement라 칭함
         - 프로토콜을 준수할 모델 유형에 대한 placeholder 역할
         
-        ![스크린샷 2023-03-27 오후 6.20.07.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76fd54c9-2875-4310-a0b1-06e63fa03601/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.20.07.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228456504-c274f69c-1aff-4a08-9e95-a8dc65b10491.png" width="50%" height="50%">
         
         - 프로토콜을 작성하였으니, 이를 활용하는 것으로 넘어가보니, [Ordered]인 heterogeneous array 존재
         - 즉, 이 배열에는 숫자, 레이블 등이 혼재 가능
         
-        ![스크린샷 2023-03-27 오후 6.22.22.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2e9228d2-524a-4707-b207-61ed28ca5e35/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.22.22.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228456596-4b5dda8e-b09d-4c9f-b244-6f7fb10336a9.png" width="50%" height="50%">
         
         - Self-Requirement를 사용했으니 컴파일러는 이를  강제로 동질적(homogeneous)으로 만들려고함
         
-        ![스크린샷 2023-03-27 오후 6.24.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bbdb27ad-e296-4d70-887e-1332d9efd4df/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.24.16.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228456691-be7da11f-867f-4917-b17b-2e5bbd3cece7.png" width="50%" height="50%">
         
         - 그에 따른 변경
         
-        ![스크린샷 2023-03-27 오후 6.25.38.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/418ccb22-f4ea-48cc-a46b-46b5dbf17632/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-03-27_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.25.38.png)
+        <img src = "https://user-images.githubusercontent.com/99063327/228456791-9dc914c3-35cd-4847-93f9-3123245c98b1.png" width="50%" height="50%">
         
         - 타입으로 사용 가능 vs 제네릭을 통해서만 사용가능
         - Heterogeneous vs Homogenous
