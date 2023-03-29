@@ -176,7 +176,12 @@
                 - heterogeneous array의 역으로, 배열 내부 타입이 모두 같음을 의미
         - 비용 감소
         - 수평적 기능 확장 및 기능 모듈화 명확화
-        
+
+ - **Class 사용 시기**
+    - 암시적 공유를 원하는 경우 → 참조 유형이 필요할 때
+    - 인스턴스 수명이 파일과 같은 외부 부작용과 관련된 경우
+    - 추상화 인스턴스가 "sink"인 경우 (ex. CGContext)
+    - (출처: [https://github.com/Groot-94/WWDC_Study/blob/main/01. Protocol-Oriented Programming in Swift/Judy/Concept.md](https://github.com/Groot-94/WWDC_Study/blob/main/01.%20Protocol-Oriented%20Programming%20in%20Swift/Judy/Concept.md))       
 
 ## 💎 요약
 
