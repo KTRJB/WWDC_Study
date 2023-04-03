@@ -23,7 +23,7 @@
 | 2016 | Xcode | Using Time Profiler in Instruments | 중 ||
 | 2016 | Debugging | Unified Logging and Activity Tracing | 중 ||
 | 2016 | Debugging | Visual Debugging with Xcode | 중 ||
-| 2016 | Swift | Concurrent Programming With GCD in Swift 3 | 중 ||
+| 2016 | Swift | [Concurrent Programming With GCD in Swift 3](https://developer.apple.com/videos/play/wwdc2016/720/) | 중 |😀|
 | 2016 | Swift | Understanding Swift Performance | 중 ||
 | 2016 | Swift | Swift API Design Guidelines | 하 ||
 | 2017 | Debugging | Finding Bugs Using Xcode Runtime Tools | 중 ||
