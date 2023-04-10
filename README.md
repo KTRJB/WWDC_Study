@@ -24,7 +24,7 @@
 | 2016 | Debugging | Unified Logging and Activity Tracing | 중 ||
 | 2016 | Debugging | Visual Debugging with Xcode | 중 ||
 | 2016 | Swift | [Concurrent Programming With GCD in Swift 3](https://developer.apple.com/videos/play/wwdc2016/720/) | 중 |😀|
-| 2016 | Swift | Understanding Swift Performance | 중 ||
+| 2016 | Swift | [Understanding Swift Performance](https://developer.apple.com/videos/play/wwdc2016/416/) | 중 |😀|
 | 2016 | Swift | Swift API Design Guidelines | 하 ||
 | 2017 | Debugging | Finding Bugs Using Xcode Runtime Tools | 중 ||
 | 2017 | Internationalization and Localization | Localizing with Xcode 9 | 하 ||
