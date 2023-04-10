@@ -1,0 +1,135 @@
+# Concurrent Programming With GCD in Swift3
+
+### 앱은 여러 개의 스레드를 가질 수 있따.
+
+- 메인 스레드: 사용자 인터페이스를 강화하는 스레드
+    - 메인 스레드에서 무겁거나 대기 시간이 긴 작업을 하면 그 시간동안은 유저 인터페이스가 블락된다. (ex. 빙글빙글 돌거나 UI가 느려지고, 멈추는 현상)
+    - ⭐️ 이런 문제를 어떻게 해결할까?가 이번 주제의 핵심.
+        - 동시성을 통해 해결 가능!
+- 기타 스레드: 이외 스레드
+
+### 동시성
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/08455fd2-b3c6-439b-af4e-4c21d7622b73/Untitled.png)
+
+- 시스템에서는 스레드를 만들어서 동시성 환경을 만들 수 있다.
+- CPU는 한번에 하나의 스레드만 실행시킬 수 있다.
+- GCD는 스레드에 추상적인 개념을 도입한 것이다.
+    - 다중 스레드 코드를 작성할 수 있게 도와준다.
+    
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/289640fb-22a6-4dd8-be5f-226c5d056f46/Untitled.png)
+
+- 메인 스레드는 Main Run Loop와 Main Queue를 모두 가져온다.
+- DispatchQueue에 작업을 투입하면 스레드를 생성하고 작업을 할당한 다음, 작업 이후 스레드 소멸까지 책임지고 해준다.
+- 모든 Thread는 **각자의 RunLoop**를 가질 수 있다.
+    - 그렇다고 **Thread를 생성할 때 RunLoop도 자동으로 같이 생성**되나??  **고건 아님!!**
+    
+- 메인 스레드에서 작업을 하지 않고 백그라운드에서 작업을 하게 만들고, 결과만 나중에 돌려 받는다.
+    - **다소 비용이 든다고 함.**
+
+```swift
+let queue = DispatchQueue(label: "com.example.imagetransform")
+
+queue.async { // 백그라운드 작업
+	let smallImage = image.resize(to:rect)
+
+	DispatchQueue.main.async {
+		imageView.image = smallImage // 결과만 돌려받음 
+	}
+}
+```
+
+![https://velog.velcdn.com/images/okstring/post/32419d3c-22cc-46f8-9772-5ce2d5ad3b2e/스크린샷 2021-09-26 오후 9.29.50.png](https://velog.velcdn.com/images/okstring/post/32419d3c-22cc-46f8-9772-5ce2d5ad3b2e/스크린샷 2021-09-26 오후 9.29.50.png)
+
+- 스레드 풀은 동시성을 제한한다!
+    - 블록되어 있는 스레드가 많으면 필요 이상의 스레드가 생성된다 -> 스레드 폭발
+    - 그 이유는 스레드 풀이 제한되어 있기 때문
+
+따라서 **코드를 실행하는 데 사용할 적절한 수의 디스패치 대기열을 선택하는 것이 매우 중요!**
+
+- Chaining vs Grouping
+    - Chaining: 한 큐에서 작업을 끝내면 다른 큐로 넘기는 것
+    - Grouping: 여러 큐에서 작업을 이어 받는 것. 기다리는 작업을 그룹지어서 모든 작업이 끝나는 것은 노티받을 수 있다.
+
+ 
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/676316cd-18ef-4429-9c74-39984ce053f4/Untitled.png)
+
+- QoS
+    - 업무에 대한 명시적인 분류
+    - 개발자가 의도적으로 실행 우선 순위를 지정하는 것
+    - async로 작업을 넣을 때 작업별로 지정할 수도 있고, 큐 자체에 미리 지정해 놓을 수 도 있다.
+
+- DispatchWorkItem
+    - 기본적으로 .async는 제출 시의 context(QoS, logging 등)를 캡쳐한다.
+        - 즉, *Concurrency를 직렬로 활용 가능하게끔 캡슐화한 것임!*
+    - 실행 옵션을 다양하게 조정하려면, DispatchWorkItem을 쓰면 된다.
+    - .assignCurrentContext를 쓰면 생성시의 context를 캡쳐한다.
+    - wait를 통해서 해당 workItem이 끝나는 것을 받을 수도 있다. -> 이 때 해당 workItem의 QoS는 wait하는 스레드의 QoS만큼 올라간다.
+        - 이는 DispatchWorkItem이 ownership 정보를 가지고 있기 때문이다.
+
+- Swift 3 and Synchronization
+    - swfit 언어는 thread-safe를 지원하지 않는다.
+    - 그렇기 때문에 동기화를 해야한다.
+    
+- Use GCD for Synchronization
+    - 동기화 목적으로 이제 **Dispatch Queue**를 사용해라.
+
+- Lock
+    - Darwin에서 제공하는 C스타일의 Lock은 제대로 쓰기가 굉장히 어렵다.
+    - Foundation의 Lock: Objective-C 객체로 C스타일 구조체를 감싼 것
+    - 권장하는 것은 DispatchQueue.sync
+    
+- Object Lifecycle in a Concurrent World
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b60c672c-b911-4e95-becd-5eacb19c453c/Untitled.png)
+
+동기화가 필요하지 않은 값이 전달되는 방식으로 앱을 구성할 수 있으면 제일 좋음. 그러나 실제 코드에서는 서브시스템에 액세스할 일부 개체가 필요하고 개체 참조가 발생한다. 그리고 이런 참조를 제거하는 것이 실제로는 어려울 수 있다.따라서 크래시를 피하기 위해 객체 상태는 4단계를 거쳐야 함 
+
+- setup - activated - invalidated - deallocated
+    1. Setup개체를 만들고 목적에 필요한 프로퍼티를 제공한다.
+    2. Activated객체를 활성화시킨다. 이 객체를 다른 서브시스템이 알 수 있게 됨. 동시성 프로그래밍 환경에서 해당 객체를 사용할 수 있게 됨
+    3. Invalidated객체를 제거하고 싶다면, 비활성화를 거쳐야 한다. 앱의 모든 부분, 모든 서브시스템에서 이 객체가 사용되지 않고 사라져야 함을 확인한다.
+    4. DeallocationInvalidated 단계가 끝나면 할당 해제 단계를 수행한다.
+    
+- 옵저버 패턴
+- 
+    
+    ![스크린샷 2023-04-10 오전 2.51.16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/366f9377-b927-4e57-8bab-07dcc036ea50/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-04-10_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_2.51.16.png)
+    
+
+```swift
+// 디스패치 큐
+protocol SubsystemObserving {
+	func systemStarted(...)
+	func systemDone(...)
+}
+
+// 메인 큐
+class BusyController: SubsystemObserving { // 1. 셋업
+	var invalidated = true
+
+	init(...) { ... }
+
+	func activate() { // 2. 액티베이션
+		Datatransform.sharedInstance.register(observer: self, queue: DispatchQueue.main)
+	}
+
+	func invalidate() {
+		dispatchPrecondition(.onQueue(DispatchQueue.main))
+		invalidated = true
+		DataTransform.sharedInstance.unregister(observer: self)		
+	}
+
+	deinit { 
+		precondition(invalidated)
+	}
+}
+```
+
+- deinit 문제 발생
+    - Observer 등록으로 인한 다중 소유 문제
+    - 데드락 문제
+    - 그래서 invaildate를 명시적으로 호출하도록 해야 된다.
+        - 이때 invalidate 상태를 확인할 수 있도록 데이터를 남기는 것도 좋다.
