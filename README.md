@@ -3,7 +3,7 @@
 #### 2023년 03월 27일 (월) ~
 
 ## 👥 스터디원
-☺️ [그루트](https://github.com/Groot-94), [주디](https://github.com/Judy-999), [예톤](https://github.com/yeeton37), [수꿍](https://github.com/Jeon-Minsu)
+☺️ [그루트](https://github.com/Groot-94), [주디](https://github.com/Judy-999), [예톤](https://github.com/yeeton37), [수꿍](https://github.com/Jeon-Minsu), [브래드](https://github.com/bradheo65)
 
 ## 🐳 RULE
 - 주 1회 (월) 전까지 한 주제를 정해서 각자 공부하고 실습합니다.
@@ -35,7 +35,7 @@
 | 2017 | Debugging | Debugging with Xcode 9 | 중 ||
 | 2017 | Debugging | Understanding Undefined Behavior | 중 ||
 | 2018 | UI Frameworks | High Performance Auto Layout | 중 ||
-| 2018 | Swift | Embracing Algorithms | 중 ||
+| 2018 | Swift | [Embracing Algorithms](https://developer.apple.com/videos/play/wwdc2018/223/) | 중 |😀|
 | 2018 | Swift | Swift Generics (Expanded) | 상 ||
 | 2018 | Debugging | Understanding Crashes and Crash Logs | 상 ||
 | 2018 | Debugging | Advanced Debugging with Xcode and LLDB | 중 ||
