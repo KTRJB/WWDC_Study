@@ -183,6 +183,7 @@ local 변수를 초기화하는 assignment소스에서 Existential Container로 
 
 
 ⭐️ 정리
+
 ![](https://i.imgur.com/7xMwluE.png)
 
 1. Swift컴파일러는 d.draw()에서, 어떤 struct의 draw가 불려져야될지 어떻게 아는걸까??에 대한 것을 지금까지 공부한것이다.
