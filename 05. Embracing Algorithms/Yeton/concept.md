@@ -140,5 +140,3 @@ nlogn은 n^2만큼은 아니지만 거의 비슷하게 취급돼서 굿. (실제
 - `generic algorithms`이 non-generic algorithms보다 더 재사용 가능하고, 테스트 가능하며, 훨씬 더 명확하다.
 - 그러므로 우리들의 코드를 문서화하자.
 - 조직에서 코드 품질을 개선하려면 모든 코딩 표준을 원시 루프 없음이라는 하나의 목표로 교체하자.
-
-<img src = "https://github.com/Groot-94/WWDC_Study/assets/99063327/64da090e-f670-452c-9d7b-e2b04f244f33" width="50%" height="50%">
