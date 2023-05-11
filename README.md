@@ -36,7 +36,7 @@
 | 2017 | Debugging | Understanding Undefined Behavior | 중 ||
 | 2018 | UI Frameworks | High Performance Auto Layout | 중 ||
 | 2018 | Swift | [Embracing Algorithms](https://developer.apple.com/videos/play/wwdc2018/223/) | 중 |😀|
-| 2018 | Swift | Swift Generics (Expanded) | 상 ||
+| 2018 | Swift | [Swift Generics (Expanded)](https://developer.apple.com/videos/play/wwdc2018/406/) | 상 |😀|
 | 2018 | Debugging | Understanding Crashes and Crash Logs | 상 ||
 | 2018 | Debugging | Advanced Debugging with Xcode and LLDB | 중 ||
 | 2018 | Debugging | iOS Memory Deep Dive | 상 ||
