@@ -5,21 +5,23 @@
 <br>
 
 아래는 배열을 돌면서 특정 원소를 찾아지우는 연산이다.
+![](https://hackmd.io/_uploads/HkUUDSoV3.png)
 
-![](https://hackmd.io/_uploads/Bkh-GvcVh.png)
-
-![](https://hackmd.io/_uploads/By0ZX7qV2.png)
+![](https://hackmd.io/_uploads/SkzcvBo43.png)
 
 - 앞에서부터 for문을 돌면서 지우면 문제가 발생함.
     - 지울때 마다 원소의 개수가 바뀌면서 out-of-index 문제가 생긴다. 
 
-![](https://hackmd.io/_uploads/S1IfYX9Nn.png)
+![](https://hackmd.io/_uploads/HkVODBo4h.png)
+
 
 - while문으로 변경하면 버그를 알아차리기 힘들고, 인덱스를 잘못 스킵하는 문제가 생길 수 있다. 예를 들어 두 개의 요소를 연속적으로 선택하면 첫 번째 요소가 제거되고 다음 요소로 바로 이동하기 때문에 문제가 발생한다. 
 - 해결하더라도 else구문을 추가해야 해서 코드가 길어진다. 
 
+![](https://hackmd.io/_uploads/HyPp_SiV2.png)
 
-![](https://hackmd.io/_uploads/ByAgKQc4h.png)
+![](https://hackmd.io/_uploads/BkroOHo42.png)
+
 
 - 그래서 발표자가 알아낸 방법은 위와 같이 뒤에서부터 탐색하는 방법이다. 
 - 거꾸로 가면 배열의 일부를 아직 변경하지 않은 부분만 반복하며 삭제할 수 있게 된다.
@@ -31,15 +33,14 @@
 
 위의 방법을 해결할 수 있는데, 바로 **O(n)** 인` removeAll(where:)`을 쓰는 것이다.
 
+![](https://hackmd.io/_uploads/r1gPkFSsN3.png)
 
-![](https://hackmd.io/_uploads/rkrRqQcNn.png)
-
-
-![](https://hackmd.io/_uploads/SkD4iXq4n.png)
+![](https://hackmd.io/_uploads/B1SfKro4n.png)
 
 ### Linear vs Quadratic
 
-![](https://hackmd.io/_uploads/r1UJ2m942.png)
+![](https://hackmd.io/_uploads/HkAGFHsNh.png)
+
 
 Linear 알고리즘은 작은 문제에서는 더 좋지 않을 수 있지만, 결국에는 Quadratic 알고리즘보다 더 빠르다.
 만약 우리가 계속해서 더 큰 문제를 본다면, 항상 선형 알고리즘이 승리하는 것을 발견할 수 있다.
@@ -53,9 +54,10 @@ Linear 알고리즘은 작은 문제에서는 더 좋지 않을 수 있지만, �
 1. halfStablePartition을 한다.
 2. 나머지 뒷부분을 모두 삭제한다.
 
-![](https://hackmd.io/_uploads/SykdwNcN3.png)
+![](https://hackmd.io/_uploads/SJ5XKBsEn.png)
 
-![](https://hackmd.io/_uploads/SyZRRXqV2.png)
+![](https://hackmd.io/_uploads/ByZVtro4n.png)
+
 
 결과: 사용하는 모든 면에서 좋아졌음. 
 주석을 이해해야하는 번거로움 & 성능까찌 모두!
@@ -67,9 +69,10 @@ Linear 알고리즘은 작은 문제에서는 더 좋지 않을 수 있지만, �
 
 또, 도형의 순서를 자유자재로 바꾸는 코드가 필요하다고 해보자.
 
-![](https://hackmd.io/_uploads/Hy_geN9En.png)
+![](https://hackmd.io/_uploads/SkJSKHsV3.png)
 
-![](https://hackmd.io/_uploads/SJ7T5VqVh.png)
+![](https://hackmd.io/_uploads/SJ4SFHi4h.png)
+
 
 삭제 후 다시 삽입하기 때문에 결국 또 O(n^2)의 시간복잡도가 발생한다.
 이를 어떻게 해결할까?
@@ -84,30 +87,32 @@ Linear 알고리즘은 작은 문제에서는 더 좋지 않을 수 있지만, �
 <br>
 
 변경 전 
-![](https://hackmd.io/_uploads/SJUBsS54h.png)
+
+![](https://hackmd.io/_uploads/Hy4vKSoV3.png)
 
 변경 후 
-![](https://hackmd.io/_uploads/ByhjiS943.png)
 
+![](https://hackmd.io/_uploads/r1luKBsN2.png)
 
-![](https://hackmd.io/_uploads/ryln3B943.png)
+![](https://hackmd.io/_uploads/H1O_FBiN3.png)
 
+![](https://hackmd.io/_uploads/BkNFKHiV2.png)
 
-![](https://hackmd.io/_uploads/Sy68ar9N3.png)
 nlogn은 n^2만큼은 아니지만 거의 비슷하게 취급돼서 굿. (실제로 nlogn이 성능이 훨씬 조음)
 
 <br>
 
 도형 예시 
-![](https://hackmd.io/_uploads/HkAkbLcNh.png)
-![](https://hackmd.io/_uploads/r1ycgUqNn.png)
 
+![](https://hackmd.io/_uploads/BJxoFSoE2.png)
 
 원래 이랬는데
-![](https://hackmd.io/_uploads/HJ-WJUqE3.png)
+
+![](https://hackmd.io/_uploads/SyqiFHiE2.png)
 
 이렇게 바꿀 수 있게 됨
-![](https://hackmd.io/_uploads/B1jmeI5N2.png)
+
+![](https://hackmd.io/_uploads/rJBhKSiV3.png)
 
 
 
@@ -118,15 +123,25 @@ nlogn은 n^2만큼은 아니지만 거의 비슷하게 취급돼서 굿. (실제
 그럼 어떻게 해야할까
 
 1. shape를 어떤 모양이든 가능하도록 해보자
-![](https://hackmd.io/_uploads/SJRNmLcE2.png)
+
+![](https://hackmd.io/_uploads/S1lpYHoEh.png)
+
 2. 근데 where절을 없애고 싶은데...?
-![](https://hackmd.io/_uploads/H1zS785Nn.png)
+
+![](https://hackmd.io/_uploads/BJDaYSi42.png)
+
 3. 그럼 이렇게 바꾸면 됨! 근데 array에도 구애받고 싶지 않은데?
-![](https://hackmd.io/_uploads/HkVH7UcEn.png)
+
+![](https://hackmd.io/_uploads/HJURYBs4h.png)
+
 4. 그럼 mutableCollection으로 바꿔주자! 근데 오류가뜬다... array는 다른걸로 바꿔놓고 또 Int를 쓴단말야..?
-![](https://hackmd.io/_uploads/Syq44L94h.png)
+
+![](https://hackmd.io/_uploads/HJ00Frs43.png)
+
 5. 완성~
-![](https://hackmd.io/_uploads/rk0Am85Nh.png)
+
+![](https://hackmd.io/_uploads/ryIk5HoEh.png)
+
 
 <br>
 
