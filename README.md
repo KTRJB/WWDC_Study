@@ -43,7 +43,7 @@
 | 2018 | Testing | Testing Tips & Tricks | 중 ||
 | 2018 | Performance | Practical Approaches to Great App Performance | 하 ||
 | 2018 | UI Frameworks | UIKit: Apps for Every Size and Shape | 중 ||
-| 2019 | Swift | Modern Swift API Design | 하 |😀|
+| 2019 | Swift | [Modern Swift API Design](https://developer.apple.com/videos/play/wwdc2019/415/) | 하 |😀|
 | 2019 | Debugging | LLDB: Beyond "po" | 중 ||
 | 2020 | Testing | Write tests to fail | 중 ||
 | 2020 | Accessibility | Make your app visually accessible | 하 ||
