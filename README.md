@@ -43,7 +43,7 @@
 | 2018 | Testing | Testing Tips & Tricks | 중 ||
 | 2018 | Performance | Practical Approaches to Great App Performance | 하 ||
 | 2018 | UI Frameworks | UIKit: Apps for Every Size and Shape | 중 ||
-| 2019 | Swift | [Modern Swift API Design](https://developer.apple.com/videos/play/wwdc2019/415/) | 하 |😀|
+| 2019 | Swift | [Modern Swift API Design](https://developer.apple.com/videos/play/wwdc2019/415/) | 하 ||
 | 2019 | Debugging | LLDB: Beyond "po" | 중 ||
 | 2020 | Testing | Write tests to fail | 중 ||
 | 2020 | Accessibility | Make your app visually accessible | 하 ||
@@ -51,7 +51,7 @@
 | 2020 | Swift | Embrace Swift type inference | 중 ||
 | 2020 | UI Frameworks | Advances in UICollectionView | 중 ||
 | 2020 | UI Frameworks | Advances in diffable data sources | 중 ||
-| 2020 | UI Frameworks | Introduction to SwiftUI | 하 ||
+| 2020 | UI Frameworks | [Introduction to SwiftUI](https://developer.apple.com/videos/play/wwdc2020/10119/) | 하 |😀|
 | 2020 | UI Frameworks | Lists in UICollectionView | 중 ||
 | 2020 | Accessibility | Make your app visually accessible | 하 ||
 | 2020 | UI Frameworks | Modern cell configuration | 중 ||
