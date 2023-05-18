@@ -20,6 +20,7 @@
 ➡️ 그것은 사용자에게 불쾌한 경험을 선사함
 
 이유 ex)
+
 ![](https://hackmd.io/_uploads/r1NjpuGr3.png)
 
 > Any의 단점
