@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Sandwiches
+
+  Created by 전민수 on 2023/05/23.
+  
+*/
+
+/* Text showing the number of ingredients in a sandwich */
+"%@ ingredients" = "%@ 재료";
+
+/* Row showing the number of sandwiches in a list */
+"%@ Sandwiches" = "%@ 샌드위치";
+
+/* Button that adds a new sandwich */
+"Add" = "추가";
+
+/* Navigation title for a view showing a list of rooms */
+"Sandwiches" = "샌드위치";
+
+/* Placeholder text when no sandwich is selected */
+"Select a sandwich" = "샌드위치를 선택하시오";
+
+/* Text indicating a sandwich is spicy */
+"Spicy" = "맵기";

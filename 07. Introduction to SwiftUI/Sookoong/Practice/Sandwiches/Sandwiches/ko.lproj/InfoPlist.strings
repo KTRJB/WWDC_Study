@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Sandwiches
+
+  Created by 전민수 on 2023/05/23.
+  
+*/
+/* Bundle Name */
+"CFBundleName" = "Sandwiches";
+
