@@ -84,7 +84,7 @@ https://developer.apple.com/documentation/swift/isknownuniquelyreferenced(_:)-98
 - 아래와 같이 copy on write를 isSparkly에만 제한하지 않고, 제네릭을 사용해서 다양한 내부 속성에 논리를 줄 수 있다.  
    ![스크린샷 2023-06-02 오후 12 23 05](https://github.com/Groot-94/WWDC_Study/assets/96932116/dabc2968-0515-4738-a6c7-656babee1a3c)
 
-![스크린샷 2023-06-02 오후 12 25 16](https://github.com/Groot-94/WWDC_Study/assets/96932116/c0ef5a30-379b-4732-8778-d83f6f86c9ec)
+   ![스크린샷 2023-06-02 오후 12 25 16](https://github.com/Groot-94/WWDC_Study/assets/96932116/c0ef5a30-379b-4732-8778-d83f6f86c9ec)
 
 ### Property wrappers
 - Property wrappers의 기본 아이디어는 작성하는 계산된 속성에서 코드를 효과적으로 재사용하는 것
@@ -122,3 +122,10 @@ https://developer.apple.com/documentation/swift/isknownuniquelyreferenced(_:)-98
    ![스크린샷 2023-06-02 오후 1 03 46](https://github.com/Groot-94/WWDC_Study/assets/96932116/bcc6c6f3-064a-431c-809c-2d9e208d062c)
 - 요약
    ![스크린샷 2023-06-02 오후 1 04 08](https://github.com/Groot-94/WWDC_Study/assets/96932116/8977a158-657a-4d4c-b0f1-e199ec585074)
+
+- 값 의미론과 참조 의미론, 각각을 사용하는 시기 및 함께 작동하게 만드는 방법
+- 제네릭과 프로토콜의 사용
+   - 프로토콜은 매우 강력하다는 것
+   - 코드 재사용을 위해 사용.
+   - 분류 및 큰 계층 구조 구축을 위한 것이 아님.
+- Property wrappers 기능과 이를 사용하여 데이터에 대한 액세스를 추상화하는 방법
