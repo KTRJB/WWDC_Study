@@ -231,3 +231,14 @@ protocol 없이 extension하는 게 컴파일러가 처리하는 데에 더 쉽�
 - Dynamic Member Lookup도 구현한 상태이다.
     - Keypath를 받아 새로운 Binding을 반환한다. (내가 지정한 모델 내부 프로퍼티인 title에 접근할 수 있게 됨)
 - $를 붙이면 Binding 타입의 인스턴스가 된다. 
+
+
+### 요약
+
+![](https://hackmd.io/_uploads/SJj4FMD8n.png)
+
+> 배운 것
+
+- 값 의미론, 참조 의미론을 사용하는 시기와 함께 작동하는 법
+- 코드의 재사용을 위해 프로토콜을 사용하자.
+- 프로퍼티 래퍼 내부에서 연산 프로퍼티를 사용하고 있는 것
