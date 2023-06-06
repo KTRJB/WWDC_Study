@@ -47,7 +47,7 @@
 | 2019 | Debugging | LLDB: Beyond "po" | 중 ||
 | 2020 | Testing | Write tests to fail | 중 ||
 | 2020 | Accessibility | Make your app visually accessible | 하 ||
-| 2020 | Swift | Unsafe Swift | 중 ||
+| 2020 | Swift | [Unsafe Swift](https://developer.apple.com/videos/play/wwdc2020/10648/) | 중 |😀|
 | 2020 | Swift | Embrace Swift type inference | 중 ||
 | 2020 | UI Frameworks | Advances in UICollectionView | 중 ||
 | 2020 | UI Frameworks | Advances in diffable data sources | 중 ||
