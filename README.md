@@ -55,15 +55,13 @@
 | 2020 | UI Frameworks | Lists in UICollectionView | 중 ||
 | 2020 | Accessibility | Make your app visually accessible | 하 ||
 | 2020 | UI Frameworks | Modern cell configuration | 중 ||
-| 2020 | Swift | What's new in Swift | 하 ||
+| 2020 | Swift | What's new in Swift | 하 |😀|
 | 2020 | UI Frameworks | What's new in SwiftUI | 하 ||
 | 2020 | UI Frameworks | Add custom views and modifiers to the Xcode Library | 중 ||
 | 2020 | UI Frameworks | App essentials in SwiftUI | 하 ||
 | 2020 | Debugging | Explore logging in Swift | 중 ||
 | 2020 | Testing | Get your test results faster | 중 ||
-| 2020 | Swift | Embrace Swift type inference | 중 ||
 | 2020 | UI Frameworks | Stacks, Grids, and Outlines in SwiftUI | 중 ||
-| 2020 | Swift | Unsafe Swift | 중 ||
 | 2020 | UI Frameworks | Data Essentials in SwiftUI | 중 ||
 | 2020 | UI Frameworks | Structure your app for SwiftUI previews | 하 ||
 | 2020 | Debugging | Why is my app getting killed? | 하 ||
