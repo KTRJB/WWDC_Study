@@ -56,7 +56,7 @@
 | 2020 | Accessibility | Make your app visually accessible | 하 ||
 | 2020 | UI Frameworks | Modern cell configuration | 중 ||
 | 2020 | Swift | [What's new in Swift](https://developer.apple.com/videos/play/wwdc2020/10170/) | 하 |😀|
-| 2021 | Swift | [What's new in Swift](https://developer.apple.com/videos/play/wwdc2020/10170/) | 하 |😀|
+| 2021 | Swift | [What's new in Swift](https://developer.apple.com/videos/play/wwdc2021/10192/) | 하 |😀|
 | 2020 | UI Frameworks | What's new in SwiftUI | 하 ||
 | 2020 | UI Frameworks | Add custom views and modifiers to the Xcode Library | 중 ||
 | 2020 | UI Frameworks | App essentials in SwiftUI | 하 ||
