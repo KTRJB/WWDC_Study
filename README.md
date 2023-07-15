@@ -58,7 +58,7 @@
 | 2020 | Swift | [What's new in Swift](https://developer.apple.com/videos/play/wwdc2020/10170/) | 하 |😀|
 | 2021 | Swift | [What's new in Swift](https://developer.apple.com/videos/play/wwdc2021/10192/) | 하 |😀|
 | 2022 | Swift | [What's new in Swift](https://developer.apple.com/videos/play/wwdc2022/110354/) | 하 |😀|
-| 2023 | Swift | [What's new in Swift](https://developer.apple.com/videos/play/wwdc2023/10164/?time=1405) | 하 |😀|
+| 2023 | Swift | [What's new in Swift](https://developer.apple.com/videos/play/wwdc2023/10164/) | 하 |😀|
 | 2020 | UI Frameworks | What's new in SwiftUI | 하 ||
 | 2020 | UI Frameworks | Add custom views and modifiers to the Xcode Library | 중 ||
 | 2020 | UI Frameworks | App essentials in SwiftUI | 하 ||
